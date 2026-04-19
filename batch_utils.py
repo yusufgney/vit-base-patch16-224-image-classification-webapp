@@ -11,12 +11,12 @@ def process_directory(directory_path, processor, model, device, threshold=0.3):
     results_list = []
     
     if not os.path.exists(directory_path):
-        return None, "Dizin bulunamadı."
+        return None, "Directory not found."
 
     files = [f for f in os.listdir(directory_path) if f.lower().endswith(allowed_extensions)]
     
     if not files:
-        return None, "Dizinde desteklenen görsel dosyası bulunamadı."
+        return None, "No supported image files found in the directory."
 
     for filename in files:
         file_path = os.path.join(directory_path, filename)
@@ -27,14 +27,14 @@ def process_directory(directory_path, processor, model, device, threshold=0.3):
             if predictions:
                 top_pred = predictions[0]
                 results_list.append({
-                    "Dosya Adı": filename,
-                    "Tahmin": top_pred["label"],
+                    "File Name": filename,
+                    "Prediction": top_pred["label"],
                     "Confidence": round(top_pred["confidence"], 4)
                 })
             else:
                 results_list.append({
-                    "Dosya Adı": filename,
-                    "Tahmin": "Model emin değil",
+                    "File Name": filename,
+                    "Prediction": "Model is not confident",
                     "Confidence": 0.0
                 })
         except Exception as e:

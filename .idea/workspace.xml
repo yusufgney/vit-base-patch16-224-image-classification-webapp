@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="516798f3-9d4b-426a-9b3f-3dcc4d558696" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flax_model.msgpack" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.safetensors" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessor_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch_model.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf_model.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/batch_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/batch_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1776596829902</updated>
-      <workItem from="1776596831117" duration="2095000" />
+      <workItem from="1776596831117" duration="2688000" />
     </task>
     <servers />
   </component>

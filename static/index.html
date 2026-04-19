@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViT Vision - Image Classification</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>ViT <span class="accent">Vision</span></h1>
+            <p class="subtitle">Experience state-of-the-art Image Classification with Vision Transformers</p>
+        </header>
+
+        <section class="upload-section">
+            <div id="drop-zone" class="drop-zone">
+                <div class="drop-zone-content">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    </div>
+                    <h3>Drag & Drop</h3>
+                    <p>or click to browse your files</p>
+                    <input type="file" id="file-input" hidden accept="image/*">
+                </div>
+            </div>
+        </section>
+
+        <section id="result-section" class="result-section hidden">
+            <div class="result-grid">
+                <div class="image-preview-container">
+                    <img id="preview-image" src="" alt="Preview">
+                </div>
+                <div class="predictions-container">
+                    <h3>Classification Results</h3>
+                    <div id="predictions-list" class="predictions-list">
+                        <!-- Predictions will be injected here -->
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <button id="reset-btn" class="btn secondary">Analyze Another</button>
+            </div>
+        </section>
+
+        <section id="loader" class="loader hidden">
+            <div class="spinner"></div>
+            <p>Analyzing pixels...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by Hugging Face • ViT-Base-Patch16-224</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
