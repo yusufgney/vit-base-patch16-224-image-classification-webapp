@@ -5,7 +5,7 @@ This project is a simple image classification web application built using a pret
 It allows users to upload images and get top-5 predictions with confidence scores.
 
 ---
-
+![img.png](assets/img.png)
 ## 🚀 Model
 
 - Model: google/vit-base-patch16-224  

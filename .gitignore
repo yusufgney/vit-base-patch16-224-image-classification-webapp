@@ -42,6 +42,11 @@ transformers_cache/
 .DS_Store
 Thumbs.db
 
+.idea/
+*.iml
+*.iws
+*.ipr
+
 .env
 
 *.log
